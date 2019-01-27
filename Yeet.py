@@ -11,13 +11,21 @@ class person:
         self.weight = weight
         self.age = age
        
-    def list():
-        retVal = "First Name: {}\nMiddle Name: {}\nLast Name: {}\nAge: {}\nEye Color: {}\nHair Color: {}\nHeight: {}\nWeight: {}\nFavorite Color: {}\nFart Smell: {}"
-        return retVal
+    def list(self):
+        return "First Name: {}\nMiddle Name: {}\nLast Name: {}\nAge: {}\nEye Color: {}\nHair Color: {}\nHeight: {}\nWeight: {}\nFavorite Color: {}\nFart Smell: {}".format(self.first_name,self.middle_name,self.last_name,self.age,self.eyes,self.hair,self.height,self.weight,self.favorite_color,self.fart)
+     
 
-p1 = person("Geoff","Stevenson","Cliff","Blue","Yeet"."Blue","Brown","5' 11","179 lbs", "23")
+p1 = person("Geoff","Stevenson","Cliff","Blue","Yeet","Blue","Brown","5' 11","179 lbs", "23")
+p2 = person("Steve","Robertson","Cliff","Green","Really Awful","Purple","Grey","1' 11","307 lbs","26")
 
-x = person.list
+x = p1.list()
+y = p2.list()
 
-print(x.format((self.first_name,self.middle_name,self.last_name,self.age,self.eyes,self.hair,self.height,self.weight,self.favorite_color,self.fart)))
-#print(.format(self.first_name,self.middle_name,self.last_name,self.age,self.eyes,self.hair,self.height,self.weight,self.favorite_color,self.fart)
+t = input("Who do you want to check?\n")
+while t != "p1" and t != "p2":
+    t = input("Invalid Dood triy ugen\n")
+
+if t == "p1":
+    print(x)
+else:
+    print(y)
