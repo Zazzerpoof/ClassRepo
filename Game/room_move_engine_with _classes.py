@@ -1,7 +1,7 @@
 import time
 import random
 
-class room:Room
+class room:
     def __init__(self,Nflag,Sflag,Eflag,Wflag,RoomInventory,Location,Description):
         self.Nflag = Nflag
         self.Sflag = Sflag
@@ -15,7 +15,30 @@ class room:Room
 
 
 
-class player
+class player:
+    def __init__(self,name,gender,hair_color,eye_color,health):
+        pass
+
+    def health:
+        pass
+
+    def holding:
+        pass
+    
+    def helmet:
+        pass
+
+    def chestplate:
+        pass
+
+    def leggings:
+    pass
+
+    def boots:
+        pass
+    
+    
+
 
 
 
